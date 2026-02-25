@@ -11,8 +11,8 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'io.github.lazyimmortal.sesame.ui.MainActivity',
-          matches: 'Button[id="android:id/button1"]',
+          activityIds: 'id="io.github.lazyimmortal.sesame:id/title_template"',
+          matches: '*[vid="buttonPanel"] > Button[id="android:id/button1"]',
           snapshotUrls: 'https://i.gkd.li/i/25533841',
         },
       ],
