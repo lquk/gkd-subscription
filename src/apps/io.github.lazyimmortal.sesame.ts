@@ -6,13 +6,13 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '跳过提示',
+      name: '跳过首次打开提示',
       desc: '点击[我知道了]',
       rules: [
         {
           fastQuery: true,
-          activityIds: 'id="io.github.lazyimmortal.sesame:id/title_template"',
-          matches: '*[vid="buttonPanel"] > Button[id="android:id/button1"]',
+          activityIds: 'io.github.lazyimmortal.sesame.ui.MainActivity',
+          matches: 'Button[text="我知道了"]',
           snapshotUrls: 'https://i.gkd.li/i/25533841',
         },
       ],
